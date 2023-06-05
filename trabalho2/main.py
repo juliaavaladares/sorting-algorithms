@@ -4,6 +4,8 @@ from index import *
 
 if __name__ == "__main__":
     keywords = input("Informe as palavras chaves: ").split()
+    filename = input(
+        "Informe o arquivo a ser testado. Lembrado que deve estar dentro da pasta testes: ")
 
     L = len(keywords[0])
 
@@ -11,7 +13,7 @@ if __name__ == "__main__":
     avl_tree.export_to_graphviz("resultados/avl_tree.dot")
     hash_table.display()
 
-    with open("testes/teste1.txt", "r") as file:
+    with open("testes/"+filename, "r") as file:
         linha = 0
         dict_keywords = {}
         for line in file:
