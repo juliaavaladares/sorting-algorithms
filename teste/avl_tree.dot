@@ -1,0 +1,12 @@
+digraph AVLTree {
+  node [shape=circle, style=filled, fillcolor=lightblue]
+  10 [label="10 (3)"]
+  10 -> 5
+  5 [label="5 (2)"]
+  5 -> 3
+  3 [label="3 (1)"]
+  5 -> 7
+  7 [label="7 (1)"]
+  10 -> 15
+  15 [label="15 (1)"]
+}

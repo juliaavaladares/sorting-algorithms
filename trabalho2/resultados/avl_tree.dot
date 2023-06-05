@@ -1,0 +1,18 @@
+digraph AVLTree {
+  node [shape=circle, style=filled, fillcolor=lightblue]
+  easy,        [label="easy,        (4)"]
+  easy,        -> be,         
+  be,          [label="be,          (2)"]
+  be,          -> and,        
+  and,         [label="and,         (1)"]
+  be,          -> by,         
+  by,          [label="by,          (1)"]
+  easy,        -> programming,
+  programming, [label="programming, (3)"]
+  programming, -> human-engineered,
+  human-engineered, [label="human-engineered, (1)"]
+  programming, -> programs,   
+  programs,    [label="programs,    (2)"]
+  programs,    -> to          
+  to           [label="to           (1)"]
+}
